@@ -6,7 +6,7 @@
     <title>inoWatts | Engenharia de Alta Tecnologia, BIM & Mobilidade</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts (Inter & Space Grotesk para um visual futurista) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,7 +19,6 @@
                 linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
         }
-        /* Ajuste de fonte de alta tecnologia */
         .font-tech {
             font-family: 'Space Grotesk', sans-serif;
         }
@@ -37,8 +36,8 @@
                             black: '#050505',
                             darkGray: '#0F0F11',
                             cardGray: '#16161A',
-                            neonGreen: '#10B981', // Verde Elétrico
-                            neonCyan: '#06B6D4',  // Azul Ciano / Laser
+                            neonGreen: '#10B981', 
+                            neonCyan: '#06B6D4',  
                             glowGreen: 'rgba(16, 185, 129, 0.15)',
                             glowCyan: 'rgba(6, 182, 212, 0.15)'
                         }
@@ -54,7 +53,7 @@
     <header class="fixed w-full bg-brand-black/85 backdrop-blur-lg z-50 border-b border-neutral-900/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo Futurista com brilho sutil -->
+                <!-- Logo -->
                 <div class="flex items-center space-x-2">
                     <span class="text-2xl font-bold font-tech tracking-wider text-white">
                         ino<span class="text-brand-neonGreen drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]">Watts</span>
@@ -65,6 +64,7 @@
                     <a href="#inicio" class="text-neutral-400 hover:text-brand-neonCyan transition duration-300">Início</a>
                     <a href="#servicos" class="text-neutral-400 hover:text-brand-neonCyan transition duration-300">Serviços</a>
                     <a href="#tecnologia" class="text-neutral-400 hover:text-brand-neonCyan transition duration-300">BIM & Revit</a>
+                    <a href="#portfolio" class="text-neutral-400 hover:text-brand-neonCyan transition duration-300">Modelos 3D</a>
                     <a href="#recarga" class="text-neutral-400 hover:text-brand-neonCyan transition duration-300">Eletropostos</a>
                     <a href="#metodo" class="text-neutral-400 hover:text-brand-neonCyan transition duration-300">Acompanhamento</a>
                 </nav>
@@ -88,47 +88,48 @@
             <a href="#inicio" class="block text-neutral-400 font-semibold py-2">Início</a>
             <a href="#servicos" class="block text-neutral-400 font-semibold py-2">Serviços</a>
             <a href="#tecnologia" class="block text-neutral-400 font-semibold py-2">BIM & Revit</a>
+            <a href="#portfolio" class="block text-neutral-400 font-semibold py-2">Modelos 3D</a>
             <a href="#recarga" class="block text-neutral-400 font-semibold py-2">Eletropostos</a>
             <a href="#metodo" class="block text-neutral-400 font-semibold py-2">Acompanhamento</a>
             <a href="#contato" class="block text-center border border-brand-neonCyan text-brand-neonCyan py-3 rounded-lg font-bold">Fale com Especialista</a>
         </div>
     </header>
 
-    <!-- Hero Section (Visual Cibernético / Laser) -->
+    <!-- Hero Section -->
     <section id="inicio" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-brand-black overflow-hidden cyber-grid">
-        <!-- Luz de fundo Neon desfocada (Ambient Light) -->
         <div class="absolute top-1/4 right-0 w-[450px] h-[450px] bg-brand-neonCyan/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute bottom-10 left-10 w-[300px] h-[300px] bg-brand-neonGreen/5 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6">
+                <div class="lg:col-span-6 space-y-6">
                     <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-neonGreen/10 text-brand-neonGreen border border-brand-neonGreen/20">
                         <span class="w-2 h-2 rounded-full bg-brand-neonGreen animate-pulse"></span> Sistema Ativo // Engenharia Digital
                     </span>
+                    <!-- Texto principal atualizado -->
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-tech tracking-tight leading-tight text-white">
-                        Conectando redes físicas à <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-neonCyan to-brand-neonGreen">automação inteligente.</span>
+                        Soluções em projetos e serviços para <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-neonCyan to-brand-neonGreen">energia que te movimenta.</span>
                     </h1>
                     <p class="text-lg text-neutral-400 max-w-xl">
-                        Da modelagem em BIM/Revit ao desenvolvimento de Hardware e Software de controle. Projetamos soluções para energia solar e sistemas de eletromobilidade de alto rendimento.
+                        Da modelagem em BIM/Revit ao desenvolvimento de Hardware e Software de controle de dados energéticos em tempo real.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
                         <a href="#contato" class="bg-brand-neonGreen text-black hover:bg-emerald-400 px-8 py-4 rounded-lg font-bold text-center transition duration-300 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
                             Fale Conosco
                         </a>
-                        <a href="#servicos" class="border border-neutral-800 hover:border-brand-neonCyan hover:text-brand-neonCyan px-8 py-4 rounded-lg font-semibold text-center transition duration-300">
-                            Explorar Serviços
+                        <a href="#portfolio" class="border border-neutral-800 hover:border-brand-neonCyan hover:text-brand-neonCyan px-8 py-4 rounded-lg font-semibold text-center transition duration-300">
+                            Ver Modelos Técnicos
                         </a>
                     </div>
                 </div>
-                <div class="lg:col-span-5 relative">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <!-- Moldura holográfica -->
+                <!-- Mockup do Dashboard Futurista -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative mx-auto max-w-lg lg:max-w-none">
                         <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brand-neonCyan to-brand-neonGreen opacity-30 blur-lg"></div>
                         <div class="relative bg-brand-darkGray rounded-2xl border border-neutral-800 p-2 overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" 
-                                 alt="Engenheiro desenvolvendo circuitos e modelagem 3D" 
-                                 class="rounded-xl w-full object-cover aspect-[4/3] grayscale contrast-125 brightness-90 hover:grayscale-0 transition duration-500">
+                            <img src="img/dashboard-futurista.png" 
+                                 alt="Dashboard Futurista de Automação e Energia" 
+                                 class="rounded-xl w-full object-cover shadow-inner border border-neutral-800/80 hover:brightness-110 transition duration-500">
                         </div>
                     </div>
                 </div>
@@ -136,7 +137,7 @@
         </div>
     </section>
 
-    <!-- Serviços (Grid de Cards com Glows no Hover) -->
+    <!-- Serviços -->
     <section id="servicos" class="py-20 lg:py-32 bg-brand-darkGray relative border-y border-neutral-900/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -160,14 +161,14 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-brand-black/40 border border-neutral-900 p-8 rounded-2xl hover:border-brand-neonGreen/40 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-300 flex flex-col justify-between">
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl bg-brand-black/40 border border-neutral-900 hover:border-brand-neonGreen/40 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 bg-neutral-900 text-brand-neonGreen rounded-xl flex items-center justify-center text-xl mb-6 border border-neutral-800">
                             <i class="fa-solid fa-microchip"></i>
                         </div>
-                        <h3 class="text-xl font-bold font-tech text-white mb-3">Hardware, Software & IoT</h3>
+                        <h3 class="text-xl font-bold font-tech text-white mb-3">Automação de Sistemas</h3>
                         <p class="text-neutral-400 text-sm leading-relaxed">
-                            Desenvolvimento de placas eletrônicas controladoras de equipamentos com software web/móvel de monitoramento remoto.
+                            Integração de hardware IoT e interfaces web customizadas para gerenciar e monitorar sua planta em tempo real.
                         </p>
                     </div>
                 </div>
@@ -178,9 +179,9 @@
                         <div class="w-12 h-12 bg-neutral-900 text-amber-500 rounded-xl flex items-center justify-center text-xl mb-6 border border-neutral-800">
                             <i class="fa-solid fa-sun"></i>
                         </div>
-                        <h3 class="text-xl font-bold font-tech text-white mb-3">Sistemas Solar Fotovoltaicos</h3>
+                        <h3 class="text-xl font-bold font-tech text-white mb-3">Sistemas Fotovoltaicos</h3>
                         <p class="text-neutral-400 text-sm leading-relaxed">
-                            Auto-geração distribuída de energia limpa para redução drástica dos custos fixos mensais do seu comércio ou indústria.
+                            Geração distribuída de energia limpa com acompanhamento de dados de geração direto no seu dashboard de controle.
                         </p>
                     </div>
                 </div>
@@ -193,7 +194,7 @@
                         </div>
                         <h3 class="text-xl font-bold font-tech text-white mb-3">Consultoria de Energia</h3>
                         <p class="text-neutral-400 text-sm leading-relaxed">
-                            Planejamento para migração para o Mercado Livre de Energia e diagnóstico de eficiência e consumo excedente.
+                            Análises técnicas detalhadas e migração para o Mercado Livre de Energia com máxima previsibilidade.
                         </p>
                     </div>
                 </div>
@@ -204,9 +205,9 @@
                         <div class="w-12 h-12 bg-neutral-900 text-cyan-400 rounded-xl flex items-center justify-center text-xl mb-6 border border-neutral-800">
                             <i class="fa-solid fa-charging-station"></i>
                         </div>
-                        <h3 class="text-xl font-bold font-tech text-white mb-3">Infraestrutura de Eletropostos</h3>
+                        <h3 class="text-xl font-bold font-tech text-white mb-3">Eletropostos Inteligentes</h3>
                         <p class="text-neutral-400 text-sm leading-relaxed">
-                            Implantação técnica de pontos de carregamento rápidos e inteligentes de veículos elétricos para lojas e farmácias.
+                            Infraestrutura para recarga veicular em estabelecimentos comerciais (como redes de farmácias e supermercados).
                         </p>
                     </div>
                 </div>
@@ -219,7 +220,7 @@
                         </div>
                         <h3 class="text-xl font-bold font-tech text-white mb-3">Modelagem BIM & Revit</h3>
                         <p class="text-neutral-400 text-sm leading-relaxed">
-                            Estruturas elétricas simuladas em 3D integrado. Engenharia precisa sem erros de interferência ou retrabalhos na obra.
+                            Estruturas elétricas de caminhos de cabos, SPDA e subestações totalmente desenhadas e simuladas em ambiente 3D.
                         </p>
                     </div>
                 </div>
@@ -234,28 +235,77 @@
                 <div class="space-y-6">
                     <span class="text-brand-neonCyan font-bold uppercase tracking-wider text-sm font-tech">// Engenharia Computacional</span>
                     <h2 class="text-3xl sm:text-4xl font-bold font-tech text-white tracking-tight">
-                        Projetos em Revit & Compatibilização 3D (BIM)
+                        Projetos Elétricos e SPDA em Revit
                     </h2>
                     <p class="text-neutral-400 leading-relaxed">
-                        Utilizamos metodologias avançadas de engenharia integrada. Ao modelar redes lógicas e elétricas com o ecossistema BIM (Building Information Modeling), prevemos colisões técnicas e otimizamos o custo de infraestrutura antes mesmo de iniciar a instalação real.
+                        A modelagem tridimensional em Revit (BIM) nos permite criar as rotas físicas de eletrodutos e bandejas com milímetros de precisão. O resultado é uma instalação sem improvisos no canteiro de obras, reduzindo o desperdício de condutores e garantindo que o seu sistema de SPDA funcione com total conformidade física.
                     </p>
                     <ul class="space-y-3 text-neutral-300 font-medium text-sm">
                         <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-circle-dot text-brand-neonGreen"></i> Detecção preventiva de conflitos estruturais e hidráulicos.
+                            <i class="fa-solid fa-circle-dot text-brand-neonGreen"></i> Desenho técnico integrado de caminhos de cabos em modelos estruturais.
                         </li>
                         <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-circle-dot text-brand-neonGreen"></i> Quantitativos integrados, evitando desvios ou sobras de material.
+                            <i class="fa-solid fa-circle-dot text-brand-neonGreen"></i> Simulação de barramentos e caixas de passagem integradas.
                         </li>
                         <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-circle-dot text-brand-neonGreen"></i> Integração direta com softwares técnicos de cálculo elétrico.
+                            <i class="fa-solid fa-circle-dot text-brand-neonGreen"></i> Levantamento exato de materiais para orçamento sem surpresas.
                         </li>
                     </ul>
                 </div>
+                <!-- Imagem do Revit Eletrodutos -->
                 <div class="relative">
                     <div class="bg-brand-darkGray p-2 rounded-2xl border border-neutral-800 shadow-[0_0_40px_rgba(6,182,212,0.05)]">
-                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" 
-                             alt="Tela de computador exibindo um modelo 3D BIM de engenharia elétrica" 
-                             class="rounded-xl w-full object-cover aspect-[4/3] grayscale contrast-125 brightness-75 hover:grayscale-0 transition duration-500">
+                        <img src="img/revit-eletrodutos.png" 
+                             alt="Modelagem de Eletrodutos no Autodesk Revit" 
+                             class="rounded-xl w-full object-cover aspect-[4/3] border border-neutral-800/80">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Técnica & Portfólio de Modelos Reais -->
+    <section id="portfolio" class="py-20 bg-brand-darkGray border-t border-neutral-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-neonGreen font-bold uppercase tracking-wider text-sm font-tech">// Modelagem Real & Interfaces</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-tech text-white tracking-tight">Galeria de Modelos Técnicos inoWatts</h2>
+                <p class="text-neutral-500">
+                    Exemplos detalhados dos nossos projetos elétricos, diagramas de SPDA e sistemas supervisórios integrados em softwares BIM e automações.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Modelo 1: Projetos Completos -->
+                <div class="bg-brand-black border border-neutral-900 p-4 rounded-2xl space-y-4">
+                    <div class="overflow-hidden rounded-xl border border-neutral-800 aspect-[4/3]">
+                        <img src="img/template-completo.png" alt="Template de Projeto Elétrico Completo SPDA" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white font-tech text-lg">Projetos Elétricos Integrados</h4>
+                        <p class="text-xs text-neutral-500">Projetos residenciais, industriais, subestações e SPDA detalhados.</p>
+                    </div>
+                </div>
+
+                <!-- Modelo 2: Revit SPDA / Sistemas Eletrônicos -->
+                <div class="bg-brand-black border border-neutral-900 p-4 rounded-2xl space-y-4">
+                    <div class="overflow-hidden rounded-xl border border-neutral-800 aspect-[4/3]">
+                        <img src="img/revit-spda.png" alt="Modelagem de SPDA e Sistemas Eletrônicos" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white font-tech text-lg">Revit Elétrica + SPDA</h4>
+                        <p class="text-xs text-neutral-500">Detalhamento técnico de sistemas de proteção e caminhos de cabos.</p>
+                    </div>
+                </div>
+
+                <!-- Modelo 3: Dashboard de Controle de Luzes -->
+                <div class="bg-brand-black border border-neutral-900 p-4 rounded-2xl space-y-4">
+                    <div class="overflow-hidden rounded-xl border border-neutral-800 aspect-[4/3]">
+                        <img src="img/dashboard-iluminacao.png" alt="Interface de Automação de Luzes" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white font-tech text-lg">Supervisórios Customizados</h4>
+                        <p class="text-xs text-neutral-500">Interfaces dinâmicas para controle e acionamento remoto de cargas.</p>
                     </div>
                 </div>
             </div>
@@ -263,7 +313,7 @@
     </section>
 
     <!-- Solução de Recarga para Negócios -->
-    <section id="recarga" class="py-20 lg:py-32 bg-brand-darkGray relative border-y border-neutral-900/50">
+    <section id="recarga" class="py-20 lg:py-32 bg-brand-black relative cyber-grid">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <span class="text-brand-neonGreen font-bold uppercase tracking-wider text-sm font-tech">// Eletromobilidade Rentável</span>
@@ -275,7 +325,7 @@
 
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Exemplo Farmácias / Varejo Rápido -->
-                <div class="bg-brand-black/60 border border-neutral-900 rounded-2xl overflow-hidden hover:border-brand-neonGreen/40 transition duration-300">
+                <div class="bg-brand-darkGray border border-neutral-900 rounded-2xl overflow-hidden hover:border-brand-neonGreen/40 transition duration-300">
                     <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" 
                          alt="Carregador veicular em farmácia" 
                          class="w-full object-cover aspect-[16/10] grayscale brightness-75 hover:grayscale-0 transition duration-500">
@@ -291,7 +341,7 @@
                 </div>
 
                 <!-- Exemplo Centros de Compra / Lojas -->
-                <div class="bg-brand-black/60 border border-neutral-900 rounded-2xl overflow-hidden hover:border-brand-neonCyan/40 transition duration-300">
+                <div class="bg-brand-darkGray border border-neutral-900 rounded-2xl overflow-hidden hover:border-brand-neonCyan/40 transition duration-300">
                     <img src="https://images.unsplash.com/photo-1558441719-ff34b0524a24?auto=format&fit=crop&w=800&q=80" 
                          alt="Carro elétrico estacionado carregando em um centro de compras" 
                          class="w-full object-cover aspect-[16/10] grayscale brightness-75 hover:grayscale-0 transition duration-500">
@@ -310,7 +360,7 @@
     </section>
 
     <!-- Nosso Diferencial: Acompanhamento de Projetos -->
-    <section id="metodo" class="py-20 bg-brand-black relative cyber-grid">
+    <section id="metodo" class="py-20 bg-brand-darkGray relative border-y border-neutral-900/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
@@ -336,4 +386,102 @@
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <di
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-neutral-900 text-brand-neonGreen border border-neutral-800 flex items-center justify-center font-mono text-sm font-bold">03</div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg font-tech">Testes e Configuração de Redes</h4>
+                                <p class="text-sm text-neutral-400">Executamos os testes iniciais de segurança, ativando painéis de controle, IoT, automação e softwares.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-brand-black p-2 rounded-2xl border border-neutral-800 shadow-[0_0_40px_rgba(16,185,129,0.05)]">
+                        <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=800&q=80" 
+                             alt="Engenheiro inspecionando obra com tablet" 
+                             class="rounded-xl w-full object-cover aspect-[4/3] grayscale contrast-125 brightness-75 hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 lg:py-32 bg-brand-black relative cyber-grid">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-brand-neonCyan/5 rounded-full blur-[130px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-brand-darkGray rounded-3xl border border-neutral-800/80 shadow-[0_0_50px_rgba(0,0,0,0.8)] p-8 sm:p-12 lg:p-16 text-center space-y-8 overflow-hidden">
+                
+                <div class="max-w-2xl mx-auto space-y-4">
+                    <span class="text-brand-neonCyan font-bold uppercase tracking-wider text-sm font-tech">// Conectar Canal</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-tech text-white tracking-tight">Abra o seu chamado diretamente</h2>
+                    <p class="text-neutral-500 text-sm sm:text-base">
+                        Use as conexões diretas abaixo para agilizar o contato com a nossa equipe especializada para solicitar orçamentos de engenharia elétrica e automação.
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto pt-4">
+                    <!-- Botão de E-mail -->
+                    <a href="mailto:inowattsengenharia@gmail.com" class="flex flex-col items-center justify-center p-6 bg-brand-black border border-neutral-800 rounded-2xl hover:border-brand-neonCyan/60 hover:shadow-[0_0_20px_rgba(6,182,212,0.1)] transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-neutral-900 text-brand-neonCyan rounded-full flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition border border-neutral-800">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-neutral-500 tracking-wider">E-mail Corporativo</span>
+                        <span class="text-sm font-semibold text-neutral-200 mt-1 break-all">inowattsengenharia@gmail.com</span>
+                    </a>
+
+                    <!-- Botão de WhatsApp -->
+                    <a href="https://wa.me/5511999999999" target="_blank" class="flex flex-col items-center justify-center p-6 bg-brand-black border border-neutral-800 rounded-2xl hover:border-brand-neonGreen/60 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-neutral-900 text-brand-neonGreen rounded-full flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition border border-neutral-800">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-neutral-500 tracking-wider">WhatsApp Express</span>
+                        <span class="text-sm font-semibold text-neutral-200 mt-1">+55 (11) 99999-9999</span>
+                    </a>
+                </div>
+
+                <div class="pt-4 text-xs text-neutral-500 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-microchip text-brand-neonCyan"></i>
+                    <span>Sistemas ativos para atendimento imediato de solicitações corporativas.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black text-neutral-500 py-12 border-t border-neutral-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <span class="text-xl font-bold font-tech text-white tracking-wider">
+                ino<span class="text-brand-neonGreen">Watts</span>
+            </span>
+            <p class="text-xs font-mono">
+                &copy; <span id="year">2026</span> inoWatts Engenharia e Tecnologia LTDA. // [SYSTEM STATUS: ONLINE]
+            </p>
+            <div class="flex space-x-6 text-lg">
+                <a href="mailto:inowattsengenharia@gmail.com" class="hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
